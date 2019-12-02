@@ -5,16 +5,18 @@ import { getUsers } from "../../modules/user/state/actions";
 
 function* changeLocaleSaga() {
   console.log("LOCALE CHANGED DO SOME SAGA FUNCTIONALITY");
-  console.log("dispatch user_get_request");
+  // console.log("dispatch user_get_request");
 
   yield delay(2000);
 
-  const filter = {
-    name: "awadh"
-  };
+  console.log("WAITED FOR 2 secs");
 
-  console.log(getUsers({ filter }));
-  yield put(getUsers({ filter }));
+  // const filter = {
+  //   name: "awadh"
+  // };
+
+  // console.log(getUsers({ filter }));
+  // yield put(getUsers({ filter }));
 }
 
 export default function* sagas() {
